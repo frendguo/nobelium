@@ -38,20 +38,20 @@ const BLOG = {
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: 'gitalk', // leave it empty if you don't need any comment plugin
+    provider: 'cusdis', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
-      repo: 'gittalk-store', // The repository of store comments
-      owner: 'frendguo',
-      admin: ['frendguo'],
-      clientID: '19e35b3895a01c630a13',
-      clientSecret: '6bc50548da6b18fde424acad26c04d290b4c74d9',
+      repo: '', // The repository of store comments
+      owner: '',
+      admin: [],
+      clientID: '',
+      clientSecret: '',
       distractionFreeMode: false
     },
     utterancesConfig: {
       repo: ''
     },
     cusdisConfig: {
-      appId: '', // data-app-id
+      appId: '2d41133d-7d29-40d8-83dc-2119cd052c6c', // data-app-id
       host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
       scriptSrc: 'https://cusdis.com/js/cusdis.es.js' // change this if you're using self-hosted version
     }
