@@ -49,6 +49,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:title" content={meta.title} />
+        <meta name="google-adsense-account" content="ca-pub-9528485090996946">
         <meta
           name="twitter:image"
           content={`${BLOG.ogImageGenerateURL}/${encodeURIComponent(
