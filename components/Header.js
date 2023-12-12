@@ -38,13 +38,14 @@ export default function Header ({ navBarTitle, fullWidth }) {
   const { dark } = useTheme()
 
   // baidu tongji
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?ee0a37f9a7a4abf5724cd7b47a7b9cad";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
+   useEffect(() => {
+      // 确保代码仅在客户端执行
+      if (typeof window !== 'undefined') {
+        const script = document.createElement('script');
+        script.src = 'https://hm.baidu.com/hm.js?ee0a37f9a7a4abf5724cd7b47a7b9cad';
+        document.body.appendChild(script);
+      }
+    }, []);
   
   // Favicon
 
