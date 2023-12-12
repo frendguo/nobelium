@@ -42,7 +42,7 @@ export default function Header ({ navBarTitle, fullWidth }) {
       // 确保代码仅在客户端执行
       if (typeof window !== 'undefined') {
         const script = document.createElement('script');
-        script.src = 'https://hm.baidu.com/hm.js?ee0a37f9a7a4abf5724cd7b47a7b9cad';
+        script.src = 'https://hm.baidu.com/hm.js?36ce9f1c56b1011ec9fab1eb27718506';
         document.body.appendChild(script);
       }
     }, []);
