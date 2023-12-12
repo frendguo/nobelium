@@ -37,6 +37,15 @@ export default function Header ({ navBarTitle, fullWidth }) {
   const BLOG = useConfig()
   const { dark } = useTheme()
 
+  // baidu tongji
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?ee0a37f9a7a4abf5724cd7b47a7b9cad";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  
   // Favicon
 
   const resolveFavicon = fallback => !fallback && dark ? '/favicon.dark.png' : '/favicon.png'
