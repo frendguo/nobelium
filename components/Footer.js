@@ -19,15 +19,6 @@ const Footer = ({ fullWidth }) => {
             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
           </p>
           <Vercel />
-          <script>
-          var _hmt = _hmt || [];
-          (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?ee0a37f9a7a4abf5724cd7b47a7b9cad";
-            var s = document.getElementsByTagName("script")[0]; 
-            s.parentNode.insertBefore(hm, s);
-          })();
-          </script>
         </div>
       </div>
     </div>
