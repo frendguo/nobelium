@@ -36,7 +36,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         <meta property="og:locale" content={BLOG.lang} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
-        <meta name="google-adsense-account" content="ca-pub-5545773224345575">
+        <meta name="google-adsense-account" content="ca-pub-5545773224345575" />
         <meta
           property="og:url"
           content={meta.slug ? `${url}/${meta.slug}` : url}
@@ -51,7 +51,6 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:title" content={meta.title} />
-        <meta name="google-adsense-account" content="ca-pub-9528485090996946" />
         <meta
           name="twitter:image"
           content={`${BLOG.ogImageGenerateURL}/${encodeURIComponent(
