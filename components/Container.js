@@ -37,6 +37,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
         <meta name="google-adsense-account" content="ca-pub-5545773224345575" />
+        <meta name="msvalidate.01" content="6D4D79403EF3319AB7B1CA087F3B3746" />
         <meta
           property="og:url"
           content={meta.slug ? `${url}/${meta.slug}` : url}
