@@ -4,6 +4,7 @@ import { useConfig } from '@/lib/config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
+import Script from 'next/script';
 // import BlogPost from './BlogPost'
 
 const Container = ({ children, layout, fullWidth, ...customMeta }) => {
@@ -21,7 +22,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
       <Head>
         <title>{meta.title}</title>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528485090996946" crossorigin="anonymous"></script>
-        <script async src="/scripts/clarity.js"></script>
+        {/* <script async src="/scripts/clarity.js"></script> */}
         {/* <meta content={BLOG.darkBackground} name="theme-color" /> */}
         <meta name="robots" content="follow, index" />
         <meta charSet="UTF-8" />
@@ -70,6 +71,15 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
           </>
         )}
       </Head>
+      <Script id="clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID}");
+          `}
+      </Script>
       <div
         className={`wrapper ${BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
           }`}
