@@ -19,7 +19,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
   }
 
   useEffect(() => {
-   
+
   }, [])
 
   return (
@@ -27,7 +27,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
       <Head>
         <title>{meta.title}</title>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9528485090996946" crossorigin="anonymous"></script>
-       
+
         {/* <meta content={BLOG.darkBackground} name="theme-color" /> */}
         <meta name="robots" content="follow, index" />
         <meta charSet="UTF-8" />
@@ -77,16 +77,17 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         )}
       </Head>
       <Script onReady={
-          ()=>{
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "nmet4f36z7")
-          }
-        } >
+        () => {
+          (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+          })(window, document, "clarity", "script", "nmet4f36z7")
+        }
+      }
+        id="clarity"
+      />
 
-        </Script>
       <div
         className={`wrapper ${BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
           }`}
